@@ -1,6 +1,7 @@
 (function() {
 
     var width, height, largeHeader, canvas, ctx, lines, target, size, animateHeader = true;
+    var curPerc = 0;
 
     // Main
     initHeader();
@@ -77,20 +78,20 @@
 
             var r1 = Math.random()*(size < 400 ? 400 : size)*0.4;
             var r2 = Math.random()*(size < 400 ? 400 : size)*0.4;
-            var x1 = r1*Math.cos(_this.angle*(Math.PI/180)) + width*0.5;
+            var x1 = r1*Math.cos(_this.angle*(Math.PI/180)) + width*.5;
             var y1 = r1*Math.sin(_this.angle*(Math.PI/180)) + height*0.48;
-            var x2 = r2*Math.cos(_this.angle*(Math.PI/180)) + width*0.5;
+            var x2 = r2*Math.cos(_this.angle*(Math.PI/180)) + width*.5;
             var y2 = r2*Math.sin(_this.angle*(Math.PI/180)) + height*0.48;
             ctx.beginPath();
             ctx.moveTo(x1, y1);
             ctx.lineTo(x2, y2);
-            ctx.strokeStyle = 'rgba(114,107,100,'+(0.5+Math.random()*0.5)+')';
+            ctx.strokeStyle = 'rgba(110,96,90,'+(0.5+Math.random()*0.1)+')';
 
             ctx.stroke();
 
             ctx.beginPath();
             ctx.arc(x1, y1, 2, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(114,107,100,'+(0.5+Math.random()*0.5)+')';
+            ctx.fillStyle = 'rgba(110,96,90,'+(0.5+Math.random()*0.1)+')';
             ctx.fill();
 
             _this.angle += Math.random();

@@ -5,8 +5,13 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 body {
 	margin: 0;
 	font-family: "Raleway";
+	color: black;
 	font-weight: 200;
 	background-color: #D3AD33;
+}
+
+h2 {
+	font-family: "Poiret One";
 }
 
 
@@ -18,11 +23,24 @@ body {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
-	z-index: 10;
+	box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);
 }
 
 .large-header {
+	/*background: #86B2A6;*/
 	background: #D3AD33;
+}
+
+header {
+	width: 100%;
+	position: relative;
+}
+
+.nav-scrolled,
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .nav {
@@ -32,6 +50,10 @@ body {
 	display: inline-flex;
 	align-items: center;
 	justify-content: flex-end;
+	box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);
+	position: fixed;
+	top: 0;
+	z-index: 150;
 }
 
 .nav li {
@@ -63,8 +85,9 @@ body {
 	padding: 0;
 	color: black;
 	text-align: center;
-	top: 57%;
+	top: 50%;
 	left: 50%;
+	z-index: 150;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
@@ -76,7 +99,7 @@ body {
 	padding: 10px 30px;
 	text-transform: uppercase;
 	color: black;
-	opacity: .6;
+	opacity: .5;
 }
 
 .main-title .thin {
@@ -92,12 +115,18 @@ body {
 
 /*///////////////////////////PORTFOLIO///////////////////////////////////////*/
 .cbp-so-scroller {
-	margin-top: 3em;
+	position: relative;
+	margin-top: 10em;
 	overflow: hidden;
+	box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);
 }
 
+/*.cbp-so-animate {
+	margin-top: 10em;
+}*/
+
 .cbp-so-section {
-	margin-bottom: 15em;
+	margin-bottom: 5em;
 }
 
 /* Clear floats of children */
@@ -197,6 +226,79 @@ body {
 	transition-delay: 0.2s;
 }
 */
+
+
+#about {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);
+}
+
+#about img {
+	margin-left: 43%;
+	margin-top: 6em;
+	border-radius: 4px;
+}
+#about h2 {
+	text-align: center;
+	font-size: 2.8em;
+}
+
+#about p {
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5em;
+}
+
+#contact {
+	box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);
+}
+
+#contact h2 {
+	text-align: center;
+	font-size: 2.8em;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact a {
+	color: black;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 10px;
+}
+
+#contact a:link {
+	color: black;
+}
+
+#contact a:visited {
+	color: black;
+}
+
+#contact a:active {
+	color: black;
+}
+
+.social {
+	margin-left: 41%;
+	margin-bottom: 3em;
+}
+
+.social a {
+	padding: 20px;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3em;
+}
 
 /* Example media queries */
 
