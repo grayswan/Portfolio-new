@@ -76,8 +76,8 @@
 
         this.draw = function() {
 
-            var r1 = Math.random()*(size < 400 ? 400 : size)*0.4;
-            var r2 = Math.random()*(size < 400 ? 400 : size)*0.4;
+            var r1 = Math.random()*(size < 600 ? 600 : size)*0.6;
+            var r2 = Math.random()*(size < 600 ? 600 : size)*0.6;
             var x1 = r1*Math.cos(_this.angle*(Math.PI/180)) + width*.5;
             var y1 = r1*Math.sin(_this.angle*(Math.PI/180)) + height*0.48;
             var x2 = r2*Math.cos(_this.angle*(Math.PI/180)) + width*.5;

@@ -168,7 +168,7 @@ main {
 
 @media only screen and (max-width : 768px) {
 	.main-title {
-		font-size: 2.8em;
+		font-size: 2.5em;
 	}
 }
 
@@ -311,7 +311,7 @@ article {
 	}
 
 	.cbp-so-side {
-		padding: 2em 1%;
+		padding: 2em 2%;
 		width: 50%;
 
 	}
@@ -321,19 +321,18 @@ article {
 	}
 
 	.cbp-so-side img {
-		max-width: 100%;
+		width: 450px;
+		height: 250px;
 	}
 }
 
 @media screen and (max-width: 41.125em) {
 	.cbp-so-side {
-		float: none;
-		width: 40%;
+		width: 100%;
 	}
 
 	.cbp-so-side img {
-		max-width: 75%;
-		max-height: 30%;
+		max-width: 120%;
 	}
 }
 
@@ -344,7 +343,7 @@ article {
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0 1px 6px -2px rgba(50,50,50,.3);
-	background-color: #D35D33;
+	background-color: #3E6C56;
 }
 
 #about img {
