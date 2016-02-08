@@ -85,13 +85,13 @@
             ctx.beginPath();
             ctx.moveTo(x1, y1);
             ctx.lineTo(x2, y2);
-            ctx.strokeStyle = 'rgba(255,165,0,'+(0.5+Math.random()*0.5)+')';
+            ctx.strokeStyle = 'rgba(142,142,142,'+(0.5+Math.random()*0.5)+')';
 
             ctx.stroke();
 
             ctx.beginPath();
             ctx.arc(x1, y1, 2, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(211,173,51,'+(0.5+Math.random()*0.5)+')';
+            ctx.fillStyle = 'rgba(135,135,135,'+(0.5+Math.random()*0.5)+')';
             ctx.fill();
 
             _this.angle += Math.random();

@@ -55,7 +55,7 @@
 			// if 0, the element is considered in the viewport as soon as it enters.
 			// if 1, the element is considered in the viewport only when it's fully inside
 			// value in percentage (1 >= h >= 0)
-			h = h || .2;
+			h = h || 0;
 
 		return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
 	}
@@ -80,7 +80,7 @@
 			// The viewportFactor defines how much of the appearing item has to be visible in order to trigger the animation
 			// if we'd use a value of 0, this would mean that it would add the animation class as soon as the item is in the viewport.
 			// If we were to use the value of 1, the animation would only be triggered when we see all of the item in the viewport (100% of it)
-			viewportFactor : .2
+			viewportFactor : 0.2
 		},
 		_init : function() {
 			if( Modernizr.touch ) return;
