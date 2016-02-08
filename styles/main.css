@@ -1,5 +1,5 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
+body, html {font-size: 100%; padding: 0; margin: 0;}
 
 
 body {
@@ -42,7 +42,6 @@ header {
 .nav-scrolled {
 	background-color: #D3AD33;
 }
-
 
 .nav a {
 	z-index: 150;
@@ -165,10 +164,27 @@ main {
 	position: relative;
 }
 
-
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1280px) {
 	.main-title {
-		font-size: 2.5em;
+		font-size: 3.9em;
+	}
+	.nav li {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (max-width : 1024px) {
+	.main-title {
+		font-size: 2.9em;
+	}
+}
+
+@media only screen and (max-width : 667px) {
+	.main-title {
+		font-size: 2em;
+	}
+	.nav li {
+		font-size: 1.4em;
 	}
 }
 
@@ -305,15 +321,53 @@ article {
 	transition-delay: 0.5s;
 }
 
-@media screen and (max-width: 73.5em) {
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
 	.cbp-so-scroller {
-		font-size: 65%;
+		font-size: 80%;
+		margin-top: 5em;
 	}
 
 	.cbp-so-side {
 		padding: 2em 2%;
-		width: 50%;
+		min-height: 8em;
+	}
 
+	article {
+		height: 500px;
+	}
+
+	.cbp-so-section {
+		margin-bottom: 3em;
+	}
+
+	.cbp-so-section h2 {
+		margin: 0;
+	}
+
+	.cbp-so-side img {
+		max-width: 100%;
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 73.5em) {
+	.cbp-so-scroller {
+		font-size: 75%;
+		margin-top: 3em;
+	}
+
+	.cbp-so-side {
+		padding: 1.5em 2.5%;
+		width: 50%;
+		min-height: 6em;
+	}
+
+	article {
+		height: 350px;
+	}
+
+	.cbp-so-section {
+		margin-bottom: 5em;
 	}
 
 	.cbp-so-section h2 {
@@ -446,16 +500,16 @@ article {
 
 @media screen and (max-width: 73.5em) {
 	#about h2 {
-		font-size: 90%;
+		font-size: 2.3em;
 	}
 	#about p {
-		font-size: 80%;
+		font-size: 1.3em;
 	}
 	#contact h2 {
-		font-size: 90%;
+		font-size: 2.3em;
 	}
 	#contact a {
-		font-size: 80%;
+		font-size: 1.3em;
 	}
 }
 
