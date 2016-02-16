@@ -1,16 +1,19 @@
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Lato:400,300);
+
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html {font-size: 100%; padding: 0; margin: 0;}
 
 
 body {
 	margin: 0;
-	font-family: "Lato";
+	font-family: "Lato", sans-serif;
 	font-weight: 200;
 	background-color: #4C4C4C;
 }
 
 h2 {
-	font-family: "Poiret One";
+	font-family: "Poiret One", cursive;
 }
 
 
@@ -34,7 +37,7 @@ h2 {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-family: "Poiret One";
+	font-family: "Poiret One", cursive;
 	font-size: 6em;
 	color: #DB7D5B;
 	opacity: .7;
@@ -45,7 +48,7 @@ h2 {
 .sub-title {
 	position: absolute;
 	width: 100%;
-	font-family: "Lato";
+	font-family: "Lato", sans-serif;
 	font-weight: 200;
 	color: #F8F8F9;
 	opacity: .6;
@@ -234,7 +237,7 @@ main {
 }
 
 .title {
-	font-family: "Poiret One";
+	font-family: "Poiret One", cursive;
 	text-align: center;
 	font-weight: 200;
 	font-size: 3em;
