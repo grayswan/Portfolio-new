@@ -190,7 +190,7 @@ header {
 	}
 	.sub-title {
 		font-size: 2.5em;
-		top: 62%;
+		top: 63%;
 	}
 	.nav {
 		justify-content: center;
@@ -204,17 +204,21 @@ header {
 @media screen and (max-width: 414px) {
 	.main-title {
 		font-size: 2em;
-		margin-top: 10%;
 	}
 	.sub-title {
 		font-size: 2em;
-		margin-top: 15%;
+		margin-top: -7%;
 	}
 	.nav {
 		justify-content: center;
 	}
 	.nav li {
 		font-size: 1em;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.nav a {
+		margin: 10px 10px;
 	}
 }
 
@@ -224,10 +228,17 @@ main {
 	position: relative;
 }
 
-.work {
-	font-family: "Lato";
+#work {
+	margin-top: -40px;
+	margin-bottom: 50px;
+}
+
+.title {
+	font-family: "Poiret One";
 	text-align: center;
 	font-weight: 200;
+	font-size: 3em;
+	letter-spacing: 10px;
 	color: #262627;
 	opacity: .6;
 	border-top: 1px solid #262627;
@@ -425,8 +436,14 @@ article {
 }
 
 @media screen and (max-width: 667px) {
-	.work {
-		font-size: 30px;
+	.title {
+		font-size: 28px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	#work {
+		margin-top: -30px;
+		margin-bottom: 0px;
 	}
 	.cbp-so-side {
 		width: 100%;
@@ -461,6 +478,7 @@ article {
 	.cbp-so-section h2 {
 		margin-bottom: auto;
 		font-size: 2.3em;
+		margin-top: 0;
 	}
 	.cbp-so-section p {
 		font-size: 1.5em;
@@ -469,8 +487,14 @@ article {
 		max-width: 100%;
 		height: 240px
 	}
-	.work {
-		font-size: 30px;
+	.title {
+		font-size: 25px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	#work {
+		margin-top: -20px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -482,6 +506,10 @@ article {
 	flex-direction: column;
 	background-color: #DB7D5B;
 	box-shadow: 6px 6px 6px -2px rgba(50,50,50,.3);
+}
+
+#about-heading {
+	margin-top: 50px;
 }
 
 #about img {
@@ -528,16 +556,14 @@ article {
 	display: flex;
 	flex-direction: column;
 	background-color: #F8F8F9;
-	/*border-top: 4px groove #EBEBEC;*/
 	}
 
-#contact h2 {
-	text-align: center;
-	font-size: 2.8em;
+#contact-heading {
+	margin-top: -60px;
+	margin-bottom: 20px;
 }
-
 #linkedin {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 #contact a {
@@ -545,38 +571,6 @@ article {
 	font-size: 1.4em;
 	text-align: center;
 	padding: 10px;
-	-webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-#contact a::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098d1;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
 
 #contact a:link {
@@ -679,6 +673,10 @@ article {
 }
 
 @media screen and (max-width: 667px) {
+	#about-heading {
+		margin-top: -30px;
+		margin-bottom: 0px;
+	}
 	#about img {
 		width: 200px;
 		height: 270px;
@@ -688,10 +686,10 @@ article {
 @media screen and (max-width: 41.125em) {
 	#about {
 		padding-top: 15px;
-		margin-top: 2em;
+		margin-top: 3em;
 	}
-	#about h2 {
-		font-size: 2em;
+	#about-heading {
+		margin-top: 20px;
 	}
 	#about p {
 		font-size: 1.3em;
@@ -705,6 +703,9 @@ article {
 	#contact {
 		padding-top: 50px;
 		margin-top: 3em;
+	}
+	#contact-heading {
+		margin-top: -25px;
 	}
 	#contact h2 {
 		font-size: 2em;
